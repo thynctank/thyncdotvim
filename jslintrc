@@ -3,5 +3,6 @@
 	forin: true,
 	sub: true,
 	onevar: true,
-	newcap: true
+	newcap: true,
+	debug: false
 */
