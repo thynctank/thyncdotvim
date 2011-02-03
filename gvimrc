@@ -9,6 +9,7 @@ if has("gui_macvim")
 	macmenu &File.New\ Tab key=<nop>
 	map <D-t> :CommandT<CR>
 	set fu
+	let jslint_command_options = "-conf ~/.vim/javascriptlint_options -nofilelisting -nocontext -nosummary -nologo -process"
 elseif
 	set guifont=Lucida_Console:h14:cANSI
 	map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleScreen", 0)<CR>
