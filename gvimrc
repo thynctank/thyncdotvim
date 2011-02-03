@@ -1,6 +1,4 @@
-set go-=T
-set go-=r
-set go-=L
+set go=""
 au GUIEnter * IndentGuidesToggle
 
 if has("gui_macvim")
