@@ -4,5 +4,6 @@
 	sub: true,
 	onevar: true,
 	newcap: true,
-	debug: false
+	debug: false,
+	sed: false
 */
