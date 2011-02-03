@@ -1,4 +1,6 @@
 set go-=T
+set go-=r
+set go-=L
 set fu
 au GUIEnter * IndentGuidesToggle
 
