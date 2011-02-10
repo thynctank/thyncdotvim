@@ -6,25 +6,22 @@
 	url = http://github.com/msanders/snipmate.vim.git
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
+	url = http://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = http://github.com/scrooloose/nerdtree.git
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
-	url = https://github.com/kogakure/vim-sparkup.git
+	url = http://github.com/kogakure/vim-sparkup.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
+	url = http://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = git://repo.or.cz/vcscommand
 [submodule "bundle/rails"]
 	path = bundle/rails
-	url = https://github.com/tpope/vim-rails.git
-[submodule "bundle/coffeescript"]
-	path = bundle/coffeescript
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = http://github.com/tpope/vim-rails.git
 [submodule "bundle/other/plugin/javascriptlint"]
 	path = bundle/other/plugin/javascriptlint
-	url = https://github.com/joestelmach/javaScriptLint.vim.git
+	url = http://github.com/joestelmach/javaScriptLint.vim.git
