@@ -5,9 +5,9 @@ color vilight
 set ic  
 set hls is
 set si
-set foldmethod=syntax   "fold based on indent
+set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
+set foldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 set nu
 set backspace=indent,eol,start
@@ -15,8 +15,11 @@ set nowrap
 set tabstop=2
 set shiftwidth=2
 set autoindent
+set cindent
 set ignorecase
 set smartcase
+imap <Tab> <C-P>
+imap <S-Tab> <C-N>
 
 filetype plugin on
 
