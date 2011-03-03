@@ -12,5 +12,6 @@ else
 	set guifont=Lucida_Console:h14:cANSI
 	map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 	au GUIEnter * call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)
+	let jslint_command_options = "-conf \"C:\\Program\ Files (x86)\\Vim\\vimfiles\\javascriptlint_options\" -nofilelisting -nocontext -nosummary -nologo -process"
 endif
 
