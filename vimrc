@@ -1,6 +1,12 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+if has("gui_macvim")
+  let g:snippets_dir = $VIM . "/.vim/snippets"
+else
+  let g:snippets_dir = $VIM."/vimfiles/snippets"
+endif
+
 color vilight
 set hls is
 set foldmethod=indent   
