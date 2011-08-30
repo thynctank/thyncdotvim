@@ -7,3 +7,26 @@ snippet date
 	`strftime("%Y-%m-%d")`
 snippet ddate
 	`strftime("%B %d, %Y")`
+snippet xlp
+	CrossLoop
+snippet action
+	<input type="button" class="action" value="${1}"/>${2}
+snippet actionsub
+	<input type="submit" class="action" value="${1}"/>${2}
+snippet fieldnlabel
+	<div class="fieldAndLabel">
+		<label for="${1:fieldId}">${2}</label>
+		<input id="${1}" name="${1}"/>
+		<div class="clear"></div>
+	</div>
+	${3}
+snippet require
+	require([${1}], function(${2}) {
+		${3}
+	});
+	${4}
+snippet define
+	define([${1}], function(${2}) {
+		${3}
+	});
+	${4}
