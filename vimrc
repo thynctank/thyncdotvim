@@ -24,9 +24,9 @@ set smartindent
 set ignorecase
 set smartcase
 
-map <C-t> :tabnew
-map <C-l> :tabnext
-map <C-h> :tabprevious
+map <C-t> :tabnew<CR>
+map <C-l> :tabnext<CR>
+map <C-h> :tabprevious<CR>
 
 filetype plugin on
 syntax on
