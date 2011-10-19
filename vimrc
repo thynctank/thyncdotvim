@@ -27,6 +27,7 @@ set smartcase
 map <C-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
+map <C-m> :MRU<CR>
 
 filetype plugin on
 syntax on
