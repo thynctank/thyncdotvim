@@ -28,6 +28,7 @@ map <C-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-m> :MRU<CR>
+let mapleader = ' '
 
 filetype plugin on
 syntax on
