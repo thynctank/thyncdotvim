@@ -43,3 +43,9 @@
 [submodule "bundle/haml"]
 	path = bundle/haml
 	url = http://github.com/tpope/vim-haml.git
+[submodule "mru"]
+	path = mru
+	url = http://github.com/vim-scripts/mru.vim.git
+[submodule "bundle/mru"]
+	path = bundle/mru
+	url = http://github.com/vim-scripts/mru.vim.git
