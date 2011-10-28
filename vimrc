@@ -24,6 +24,10 @@ set smartindent
 set ignorecase
 set smartcase
 
+set nobackup
+set nowritebackup
+set noswapfile
+
 map <C-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
