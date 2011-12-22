@@ -1,5 +1,6 @@
 set go=""
 au GUIEnter * IndentGuidesToggle
+au BufWritePost *.coffee silent CoffeeMake! -b | cwindow
 
 if has("gui_macvim")
 	set fuopt+=maxhorz
