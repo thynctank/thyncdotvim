@@ -34,5 +34,9 @@ map <C-h> :tabprevious<CR>
 map <C-m> :MRU<CR>
 let mapleader = ' '
 
+let g:session_autosave = 'yes'
+let g:session_autoload = 'yes'
+let g:session_default_to_last = 1
+
 filetype plugin on
 syntax on
