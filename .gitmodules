@@ -55,3 +55,6 @@
 [submodule "bundle/vim-session"]
 	path = bundle/vim-session
 	url = http://github.com/xolox/vim-session.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = http://github.com/scrooloose/syntastic.git
