@@ -22,9 +22,6 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = http://github.com/tpope/vim-rails.git
-[submodule "bundle/other/plugin/javascriptlint"]
-	path = bundle/other/plugin/javascriptlint
-	url = http://github.com/joestelmach/javaScriptLint.vim.git
 [submodule "bundle/fullscreen_win32"]
 	path = bundle/fullscreen_win32
 	url = http://github.com/vim-scripts/gvimfullscreen_win32.git
