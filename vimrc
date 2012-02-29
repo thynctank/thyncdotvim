@@ -1,5 +1,9 @@
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+filetype on
+filetype plugin indent on
+syntax on
 
 if has("gui_macvim")
   let g:snippets_dir = $VIM . "/.vim/snippets"
@@ -37,6 +41,4 @@ let mapleader = ' '
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
 let g:session_default_to_last = 1
-
-filetype plugin on
-syntax on
+let g:snippets_dir = $HOME . "/.vim/snippets"
