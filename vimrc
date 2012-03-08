@@ -31,6 +31,7 @@ set smartcase
 set nobackup
 set nowritebackup
 set noswapfile
+botright cwindow
 
 map <C-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
