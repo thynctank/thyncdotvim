@@ -48,7 +48,7 @@
 	url = http://github.com/vim-scripts/mru.vim.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = http://github.com/kien/ctrlp.vim.git
+	url = git://github.com/kien/ctrlp.vim.git
 [submodule "bundle/vim-session"]
 	path = bundle/vim-session
 	url = http://github.com/xolox/vim-session.git
