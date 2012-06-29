@@ -52,3 +52,9 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/scrooloose/syntastic.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = http://github.com/digitaltoad/vim-jade.git
