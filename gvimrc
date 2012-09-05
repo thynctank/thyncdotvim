@@ -7,6 +7,7 @@ if has("gui_macvim")
 	set guifont=Menlo_Regular:h18
 	macmenu &File.New\ Tab key=<nop>
 	set fu
+  set toolbar=""
 	"let jslint_command_options = "-conf ~/.vim/javascriptlint_options -nofilelisting -nocontext -nosummary -nologo -process"
 else
 	set guifont=Lucida_Console:h14:cANSI
