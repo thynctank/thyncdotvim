@@ -34,11 +34,11 @@ set noswapfile
 botright cwindow
 
 
-map <C-t> :tabnew<CR>
+map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-m> :MRU<CR>
-map <C-i> :NERDTreeTabsToggle<CR>
+map <C-t> :NERDTreeTabsToggle<CR>
 
 let mapleader = ' '
 
