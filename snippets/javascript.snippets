@@ -72,3 +72,28 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+snippet deb
+	debugger;
+snippet try
+	try {
+		${1}
+	} catch(${2}) {
+		${3}
+	}
+snippet desc
+	describe(${1}, function() {
+		${2}
+	});
+snippet it
+	it(${1}, function(done) {
+		${2}
+		done();
+	});
+snippet bf
+	before(function() {
+		${1}
+	});
+snippet aft
+	after(function() {
+		${1}
+	});

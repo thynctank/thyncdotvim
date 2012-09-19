@@ -39,6 +39,7 @@ map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-m> :MRU<CR>
 map <C-t> :NERDTreeTabsToggle<CR>
+map <D-r> call ReloadAllSnippets()<CR>
 
 let mapleader = ' '
 
@@ -47,5 +48,5 @@ let g:session_autoload = 'yes'
 let g:session_default_to_last = 1
 let g:snippets_dir = $HOME . "/.vim/snippets"
 
-autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
-autocmd BufNewFile,BufRead NERDTreeTabsOpen
+autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby<CR>
+autocmd BufNewFile,BufRead NERDTreeTabsOpen<CR>
