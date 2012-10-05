@@ -3,7 +3,7 @@ au GUIEnter * IndentGuidesToggle
 
 if has("gui_macvim")
 	set fuopt+=maxhorz
-	set guifont=Menlo_Regular:h14
+	set guifont=Menlo_Regular:h18
 	set fu
   set toolbar=""
   let jslint_command_options = "-conf ~/.vim/javascriptlint_options -nofilelisting -nocontext -nosummary -nologo -process"
