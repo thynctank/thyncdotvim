@@ -34,15 +34,14 @@ set noswapfile
 botright cwindow
 
 
+let mapleader = ' '
 map <C-m> :MRU<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-t> :NERDTreeTabsToggle<CR>
 map <D-r> call ReloadAllSnippets()<CR>
-map <C-S-v> :VimShell<CR>
-
-let mapleader = ' '
+map <Leader>s :VimShell<CR>
 
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
