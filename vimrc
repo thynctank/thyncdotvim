@@ -9,6 +9,9 @@ if has("gui_macvim")
   let g:snippets_dir = "~/.vim/snippets"
 endif
 
+let g:neocomplcache_enable_at_startup = 1
+let g:vimshell_editor_command = "macvim"
+
 color vilight
 set hls is
 set foldmethod=indent   
@@ -38,6 +41,7 @@ map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-t> :NERDTreeTabsToggle<CR>
 map <D-r> call ReloadAllSnippets()<CR>
+map <C-S-v> :VimShell<CR>
 
 let mapleader = ' '
 

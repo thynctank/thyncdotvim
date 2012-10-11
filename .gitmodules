@@ -70,3 +70,9 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = http://github.com/Shougo/neocomplcache.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = http://github.com/Shougo/vimproc.git
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = http://github.com/Shougo/vimshell.git
