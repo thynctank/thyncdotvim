@@ -6,9 +6,7 @@ filetype plugin indent on
 syntax on
 
 if has("gui_macvim")
-  let g:snippets_dir = $VIM . "/.vim/snippets"
-else
-  let g:snippets_dir = $VIM."/vimfiles/snippets"
+  let g:snippets_dir = "~/.vim/snippets"
 endif
 
 color vilight
