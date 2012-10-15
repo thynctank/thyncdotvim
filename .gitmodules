@@ -58,9 +58,6 @@
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = http://github.com/digitaltoad/vim-jade.git
-[submodule "bundle/vim-nerdtree-tabs"]
-	path = bundle/vim-nerdtree-tabs
-	url = http://github.com/jistr/vim-nerdtree-tabs.git
 [submodule "bundle/vim-ruby-conque"]
 	path = bundle/vim-ruby-conque
 	url = http://github.com/skwp/vim-ruby-conque.git
@@ -79,3 +76,6 @@
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = http://github.com/hallettj/jslint.vim
+[submodule "bundle/vim-nerdtree-tabs"]
+	path = bundle/vim-nerdtree-tabs
+	url = http://github.com/jistr/vim-nerdtree-tabs.git
