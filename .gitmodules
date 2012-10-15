@@ -73,9 +73,9 @@
 [submodule "bundle/vimshell"]
 	path = bundle/vimshell
 	url = http://github.com/Shougo/vimshell.git
-[submodule "bundle/jslint"]
-	path = bundle/jslint
-	url = http://github.com/hallettj/jslint.vim
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = http://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
