@@ -76,3 +76,6 @@
 [submodule "bundle/vimshell"]
 	path = bundle/vimshell
 	url = http://github.com/Shougo/vimshell.git
+[submodule "bundle/jslint"]
+	path = bundle/jslint
+	url = http://github.com/hallettj/jslint.vim
