@@ -5,9 +5,7 @@ filetype on
 filetype plugin indent on
 syntax on
 
-if has("gui_macvim")
-  let g:snippets_dir = "~/.vim/snippets"
-endif
+let g:snippets_dir = "~/.vim/snippets"
 
 let g:vimshell_editor_command = "macvim"
 
