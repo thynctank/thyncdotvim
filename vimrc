@@ -25,7 +25,6 @@ set autoindent
 set smartindent
 set ignorecase
 set smartcase
-set autochdir
 
 set nobackup
 set nowritebackup
