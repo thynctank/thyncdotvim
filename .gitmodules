@@ -66,7 +66,7 @@
 	url = http://github.com/rson/vim-conque.git
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
-	url = http://github.com/Shougo/neocomplcache.git
+	url = https://github.com/Shougo/neocomplcache.git
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = http://github.com/Shougo/vimproc.git
