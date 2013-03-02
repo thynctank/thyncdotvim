@@ -10,9 +10,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
-[submodule "bundle/sparkup"]
-	path = bundle/sparkup
-	url = http://github.com/kogakure/vim-sparkup.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = http://github.com/scrooloose/nerdcommenter.git
