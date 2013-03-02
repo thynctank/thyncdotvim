@@ -79,3 +79,6 @@
 [submodule "bundle/sudo.vim"]
 	path = bundle/sudo.vim
 	url = http://github.com/vim-scripts/sudo.vim.git
+[submodule "bundle/zencoding-vim"]
+	path = bundle/zencoding-vim
+	url = http://github.com/mattn/zencoding-vim.git
