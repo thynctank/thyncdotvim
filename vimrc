@@ -30,6 +30,8 @@ set nowritebackup
 set noswapfile
 botright cwindow
 
+"use ack instead of grep
+set grepprg=ack
 
 let mapleader = ' '
 map <C-m> :MRU<CR>
