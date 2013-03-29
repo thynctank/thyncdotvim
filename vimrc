@@ -31,10 +31,10 @@ set noswapfile
 botright cwindow
 
 "use ack instead of grep
-set grepprg=ack
+set grepprg=ack\ --nogroup\ --column
+set grepformat=%f:%l:%c:%m
 
 let mapleader = ' '
-map <C-m> :MRU<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
