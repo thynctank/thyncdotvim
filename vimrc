@@ -18,8 +18,8 @@ set foldlevel=2
 set nu
 set backspace=indent,eol,start
 set nowrap
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
@@ -50,3 +50,9 @@ let g:ruby_conque_rspec_command='rspec'
 autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby<CR>
 autocmd BufNewFile,BufRead NERDTreeTabsOpen <CR>
 
+augroup sparkup_types
+  " Remove ALL autocommands of the current group.
+  autocmd!
+  " Add sparkup to new filetypes
+  autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
+augroup END
