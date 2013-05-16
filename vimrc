@@ -1,6 +1,7 @@
 filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+call pathogen#helptags()
 filetype on
 filetype plugin indent on
 syntax on
