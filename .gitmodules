@@ -79,6 +79,3 @@
 [submodule "bundle/vim-sparkup"]
 	path = bundle/vim-sparkup
 	url = https://github.com/tristen/vim-sparkup
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
