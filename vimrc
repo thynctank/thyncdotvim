@@ -25,6 +25,8 @@ set expandtab
 set autoindent
 set smartindent
 set smartcase
+"ignore build directory (at Gannett)
+set wildignore="build/static/**"
 
 set nobackup
 set nowritebackup
