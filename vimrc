@@ -26,7 +26,7 @@ set autoindent
 set smartindent
 set smartcase
 "ignore build directory (at Gannett)
-set wildignore+=build/static/**,*.pyc,node_modules/**
+set wildignore+=build/static/**,*.pyc,node_modules/**,bin/**
 
 set nobackup
 set nowritebackup
