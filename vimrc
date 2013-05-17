@@ -43,6 +43,7 @@ map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-t> :NERDTreeTabsToggle<CR>
 map <D-r> call ReloadAllSnippets()<CR>
+map <C-c> :cw<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <Leader>s :VimShell<CR>
