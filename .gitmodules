@@ -4,9 +4,11 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim.git
+    ignore = dirty
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = http://github.com/nathanaelkane/vim-indent-guides.git
+    ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
@@ -16,6 +18,7 @@
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = git://repo.or.cz/vcscommand
+    ignore = dirty
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = http://github.com/tpope/vim-rails.git
@@ -31,6 +34,7 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = http://github.com/tpope/vim-surround.git
+    ignore = dirty
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = http://github.com/tpope/vim-repeat.git
@@ -40,6 +44,7 @@
 [submodule "bundle/vim-session"]
 	path = bundle/vim-session
 	url = http://github.com/xolox/vim-session.git
+    ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/scrooloose/syntastic.git
@@ -52,9 +57,11 @@
 [submodule "bundle/vim-ruby-conque"]
 	path = bundle/vim-ruby-conque
 	url = http://github.com/skwp/vim-ruby-conque.git
+    ignore = dirty
 [submodule "bundle/vim-conque"]
 	path = bundle/vim-conque
 	url = http://github.com/rson/vim-conque.git
+    ignore = dirty
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
@@ -64,6 +71,7 @@
 [submodule "bundle/vimshell"]
 	path = bundle/vimshell
 	url = http://github.com/Shougo/vimshell.git
+    ignore = dirty
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = http://github.com/jistr/vim-nerdtree-tabs.git
@@ -79,6 +87,8 @@
 [submodule "bundle/vim-sparkup"]
 	path = bundle/vim-sparkup
 	url = https://github.com/tristen/vim-sparkup
+    ignore = dirty
 [submodule "bundle/multichange.vim"]
 	path = bundle/multichange.vim
 	url = https://github.com/AndrewRadev/multichange.vim.git
+    ignore = dirty
