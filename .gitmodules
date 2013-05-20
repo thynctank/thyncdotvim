@@ -79,3 +79,6 @@
 [submodule "bundle/vim-sparkup"]
 	path = bundle/vim-sparkup
 	url = https://github.com/tristen/vim-sparkup
+[submodule "bundle/multichange.vim"]
+	path = bundle/multichange.vim
+	url = https://github.com/AndrewRadev/multichange.vim.git
