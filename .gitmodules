@@ -92,3 +92,6 @@
 	path = bundle/multichange.vim
 	url = https://github.com/AndrewRadev/multichange.vim.git
     ignore = dirty
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git

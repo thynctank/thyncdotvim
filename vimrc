@@ -46,6 +46,7 @@ map <D-r> call ReloadAllSnippets()<CR>
 map <C-c> :cw<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
+map <C-b> :TagbarToggle<CR>
 map <Leader>s :VimShell<CR>
 
 let g:session_autosave = 'yes'
