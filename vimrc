@@ -26,7 +26,7 @@ set autoindent
 set smartindent
 set smartcase
 "ignore build directory (at Gannett)
-set wildignore+=build/static/**,*.pyc,node_modules/**,bin/**,**/fonts/**,*.swf,**/images/**
+set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**
 
 set nobackup
 set nowritebackup
@@ -47,6 +47,7 @@ map <C-c> :cw<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
+map <C-m> :CtrlPMRUFiles<CR>
 map <Leader>s :VimShell<CR>
 
 let g:session_autosave = 'yes'
