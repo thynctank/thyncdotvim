@@ -1,6 +1,6 @@
 set go=""
 au GUIEnter * IndentGuidesToggle
-set transparency=15
+set transparency=10
 
 if has("gui_macvim")
 	set fuopt+=maxhorz
