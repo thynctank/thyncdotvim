@@ -37,7 +37,7 @@ botright cwindow
 set grepprg=ack\ --nogroup\ --column
 set grepformat=%f:%l:%c:%m
 
-let mapleader = ' '
+let mapleader = " "
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
@@ -48,6 +48,10 @@ map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-m> :CtrlPMRUFiles<CR>
+map <PageDown> :bnext<CR>
+map <PageUp> :bprevious<CR>
+map <Home> :bfirst<CR>
+map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
 
 let g:session_autosave = 'yes'
