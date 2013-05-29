@@ -60,6 +60,8 @@ unmap <CR>
 command! Gpull :Git pull
 command! Gpush :Git push
 command! Gadd :Git add %:p
+command! Cdhere :cd %:p:h
+cabbrev cdh Cdhere
 
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
