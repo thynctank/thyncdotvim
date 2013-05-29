@@ -31,7 +31,6 @@ set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*
 set nobackup
 set nowritebackup
 set noswapfile
-botright cwindow
 
 "use ack instead of grep
 set grepprg=ack\ --nogroup\ --column
@@ -49,16 +48,17 @@ map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-j> :TagbarOpen fj<CR>
 map <C-m> :CtrlPMRUFiles<CR>
-unmap <CR>
 "map <PageDown> :bnext<CR>
 "map <PageUp> :bprevious<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
+"unmap CtrlP MRU default
+unmap <CR>
 
-command Gp :Git pull<CR>
-command Gpsh :Git push<CR>
-command Gad :Git add %:p<CR>
+command! Gp :Git pull<CR>
+command! Gpsh :Git push<CR>
+command! Gad :Git add %:p
 
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
