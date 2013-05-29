@@ -56,9 +56,9 @@ map <Leader>s :VimShell<CR>
 "unmap CtrlP MRU default
 unmap <CR>
 
-command! Gp :Git pull
-command! Gpsh :Git push
-command! Gad :Git add %:p
+command! Gpull :Git pull
+command! Gpush :Git push
+command! Gadd :Git add %:p
 
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
