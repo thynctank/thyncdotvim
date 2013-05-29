@@ -55,6 +55,11 @@ map <C-m> :CtrlPMRUFiles<CR>
 "map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
 
+cabbrev Gp :Git pull<CR>
+cabbrev Gpsh :Git push<CR>
+cabbrev Glog :Git log -20<CR>
+cabbrev Gad :Git add %:p<CR>
+
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
 let g:session_default_to_last = 1
