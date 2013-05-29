@@ -61,7 +61,6 @@ command! Gpull :Git pull
 command! Gpush :Git push
 command! Gadd :Git add %:p
 command! Gbranch :Git branch
-command! Gcheck :Git checkout <q-args>
 
 command! Cdhere :cd %:p:h
 cabbrev cdh Cdhere
