@@ -49,16 +49,16 @@ map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-j> :TagbarOpen fj<CR>
 map <C-m> :CtrlPMRUFiles<CR>
+unmap <CR>
 "map <PageDown> :bnext<CR>
 "map <PageUp> :bprevious<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
 
-cabbrev Gp :Git pull<CR>
-cabbrev Gpsh :Git push<CR>
-cabbrev Glog :Git log -20<CR>
-cabbrev Gad :Git add %:p<CR>
+command Gp :Git pull<CR>
+command Gpsh :Git push<CR>
+command Gad :Git add %:p<CR>
 
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
