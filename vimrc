@@ -48,14 +48,11 @@ map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-j> :TagbarOpen fj<CR>
-map <C-m> :CtrlPMRUFiles<CR>
 "map <PageDown> :bnext<CR>
 "map <PageUp> :bprevious<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
-"unmap CtrlP MRU default
-unmap <CR>
 
 command! Gpull :Git pull
 command! Gpush :Git push
