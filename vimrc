@@ -47,6 +47,7 @@ map <C-c> :cw<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
+map <C-j> :TagbarOpen fj<CR>
 map <C-m> :CtrlPMRUFiles<CR>
 "map <PageDown> :bnext<CR>
 "map <PageUp> :bprevious<CR>
