@@ -42,6 +42,7 @@ map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-t> :NERDTreeTabsToggle<CR>
+map <D-/> :CtrlPMRUFiles<CR>
 map <C-s> call ReloadAllSnippets()<CR>
 map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
