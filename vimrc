@@ -43,7 +43,7 @@ map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-t> :NERDTreeTabsToggle<CR>
 map <C-s> call ReloadAllSnippets()<CR>
-map <C-c> :cw<CR>
+map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
