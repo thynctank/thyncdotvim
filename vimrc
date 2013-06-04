@@ -37,7 +37,7 @@ set grepprg=ack\ --nogroup\ --column
 set grepformat=%f:%l:%c:%m
 
 let mapleader = " "
-map <D-r> :source $MYVIMRC<CR>
+map <D-r> :source $MYVIMRC<CR>:filetype detect<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
