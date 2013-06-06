@@ -24,7 +24,8 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
-set smartcase
+set ignorecase
+set infercase
 "ignore build directory (at Gannett)
 set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**
 
