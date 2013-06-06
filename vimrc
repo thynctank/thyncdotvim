@@ -1,5 +1,6 @@
 filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+runtime macros/matchit.vim
 call pathogen#infect()
 call pathogen#helptags()
 filetype on
@@ -7,7 +8,6 @@ filetype plugin indent on
 syntax on
 
 let g:snippets_dir = "~/.vim/snippets"
-
 let g:vimshell_editor_command = "macvim"
 
 color vilight
@@ -25,6 +25,7 @@ set expandtab
 set autoindent
 set smartindent
 set ignorecase
+set smartcase
 set infercase
 "ignore build directory (at Gannett)
 set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**
@@ -39,7 +40,8 @@ set grepprg=ack\ --nogroup\ --column
 set grepformat=%f:%l:%c:%m
 
 let mapleader = " "
-map <D-r> :source $MYVIMRC<CR>:filetype detect<CR>
+"reload vimrc, highlight syntax, clear pattern match highlighting
+map <D-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
@@ -87,3 +89,4 @@ augroup sparkup_types
   " Add sparkup to new filetypes
   autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
 augroup END
+
