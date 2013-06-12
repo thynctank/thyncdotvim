@@ -58,6 +58,7 @@ map <C-j> :TagbarOpen fj<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
+map <Leader>w :cclose<CR>
 
 command! Gpull :Git pull
 command! Gpush :Git push
