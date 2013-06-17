@@ -41,7 +41,7 @@ set grepformat=%f:%l:%c:%m
 
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
-map <D-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>
+map <D-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
