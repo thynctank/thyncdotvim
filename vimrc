@@ -15,7 +15,7 @@ set hls is
 set foldmethod=indent   
 set foldnestmax=10  
 set foldenable       
-set foldlevel=2         
+set foldlevel=0         
 set nu
 set backspace=indent,eol,start
 set nowrap
