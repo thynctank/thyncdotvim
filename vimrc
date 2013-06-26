@@ -28,7 +28,7 @@ set ignorecase
 set smartcase
 set infercase
 "ignore build directory (at Gannett)
-set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**,**/django-relux/**
+set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**
 set path=~/projects/**
 
 set nobackup
