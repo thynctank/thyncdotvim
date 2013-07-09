@@ -10,7 +10,9 @@ syntax on
 let g:snippets_dir = "~/.vim/snippets"
 let g:vimshell_editor_command = "macvim"
 
-color vilight
+"color vilight
+color solarized
+set background=dark
 set hls is
 set foldmethod=indent   
 set foldnestmax=10  
