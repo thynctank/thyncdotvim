@@ -12,9 +12,14 @@ let g:vimshell_editor_command = "macvim"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 
+"solarized options
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+
 "color vilight
-color solarized
 set background=dark
+colorscheme solarized
 set hls is
 set foldmethod=indent   
 set foldnestmax=10  
@@ -32,7 +37,7 @@ set ignorecase
 set smartcase
 set infercase
 "ignore build directory (at Gannett)
-set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**
+set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**,**/django-relux/**
 set path=~/projects/**
 
 set nobackup
