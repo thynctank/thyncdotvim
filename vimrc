@@ -48,6 +48,22 @@ set noswapfile
 set grepprg=ack\ --nogroup\ --column
 set grepformat=%f:%l:%c:%m
 
+function! ToggleWrap()
+   if &wrap == 1
+      set nowrap
+   else
+      set wrap
+   endif
+endfunction
+
+function! ToggleFold()
+    if &foldenable == 1
+        set nofoldenable
+    else
+        set foldenable
+    endif
+endfunction
+
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
 map <D-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>
@@ -67,7 +83,8 @@ map <C-j> :TagbarOpen fj<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
-map <Leader>w :cclose<CR>
+map <Leader>w :call ToggleWrap()<CR>
+map <Leader>f :call ToggleFold()<CR>
 
 command! Gpull :Git pull
 command! Gpush :Git push
