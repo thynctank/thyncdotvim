@@ -104,13 +104,13 @@ let g:ruby_conque_rspec_command='rspec'
 autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby<CR>
 autocmd BufNewFile,BufRead NERDTreeTabsOpen <CR>
 
-
 "file extensions for gf
 autocmd BufRead,BufRead *.rb set suffixesadd=.rb
 autocmd BufRead,BufRead *.py set suffixesadd=.py
 autocmd BufRead,BufRead *.coffee set suffixesadd=.coffee
 autocmd BufRead,BufRead *.js set suffixesadd=.js
 autocmd BufRead,BufRead *.html set suffixesadd=.html
+autocmd BufRead,BufRead *.md set ft=markdown
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.
