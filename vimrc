@@ -85,7 +85,7 @@ map <C-j> :TagbarOpen fj<CR>
 "map <End> :blast<CR>
 map <Leader>s :VimShell<CR>
 map <Leader>w :call ToggleWrap()<CR>
-map <Leader>f :call ToggleFold()<CR>
+map ff :call ToggleFold()<CR>
 
 command! Gpull :Git pull
 command! Gpush :Git push
