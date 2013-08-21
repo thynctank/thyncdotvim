@@ -94,6 +94,15 @@ command! Gpush :Git push
 command! Gadd :Git add %:p
 command! Gbranch :Git branch
 
+command! Reload :e!
+cabbrev ee Reload
+
+command! ReallyWrite :w!
+cabbrev ww ReallyWrite
+
+command! ReallyQuit :q!
+cabbrev qq ReallyQuit
+
 command! Cdhere :cd %:p:h
 cabbrev cdh Cdhere
 
