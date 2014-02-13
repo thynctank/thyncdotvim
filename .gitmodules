@@ -54,14 +54,6 @@
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = http://github.com/digitaltoad/vim-jade.git
-[submodule "bundle/vim-ruby-conque"]
-	path = bundle/vim-ruby-conque
-	url = http://github.com/skwp/vim-ruby-conque.git
-    ignore = dirty
-[submodule "bundle/vim-conque"]
-	path = bundle/vim-conque
-	url = http://github.com/rson/vim-conque.git
-    ignore = dirty
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
