@@ -39,7 +39,7 @@ set infercase
 set spell spelllang=en_us
 "ignore build directory (at Gannett)
 set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**,**/django-relux/**
-set path=~/projects/**
+set path=~/Sites/**
 
 set nobackup
 set nowritebackup
