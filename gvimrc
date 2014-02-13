@@ -1,5 +1,5 @@
 set go=""
-au GUIEnter * IndentGuidesToggle
+"au GUIEnter * IndentGuidesToggle
 set transparency=10
 
 if has("gui_macvim")
