@@ -28,8 +28,8 @@ set foldlevel=0
 set nu
 set backspace=indent,eol,start
 set nowrap
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
