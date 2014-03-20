@@ -12,14 +12,6 @@ let g:vimshell_editor_command = "macvim"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 
-"solarized options
-let g:solarized_termcolors = 256
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-
-"color vilight
-set background=dark
-colorscheme solarized
 set hls is
 set foldmethod=indent   
 set foldnestmax=10  
