@@ -40,7 +40,7 @@ set infercase
 set spell spelllang=en_us
 "ignore build directory (at Gannett)
 set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**,**/django-relux/**
-set path=~/Sites/**
+set path=~/Sites/**,~/projects/RM/trunk/core/rm-web/**
 
 set nobackup
 set nowritebackup
@@ -73,7 +73,6 @@ map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 map <C-t> :NERDTreeTabsToggle<CR>
-map <D-/> :CtrlPMRUFiles<CR>
 map <C-s> call ReloadAllSnippets()<CR>
 map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
@@ -84,6 +83,7 @@ map <C-j> :TagbarOpen fj<CR>
 "map <PageUp> :bprevious<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
+map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>s :VimShell<CR>
 map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
