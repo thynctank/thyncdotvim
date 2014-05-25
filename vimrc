@@ -19,6 +19,7 @@ let g:solarized_contrast = "high"
 
 set background=dark
 colorscheme solarized
+"colorscheme vilight
 
 
 set hls is
@@ -40,7 +41,7 @@ set infercase
 set spell spelllang=en_us
 "ignore build directory (at Gannett)
 set wildignore+=*/build/static/**,*.pyc,*/node_modules/**,*/bin/**,**/fonts/**,*.swf,**/images/**,**/django-relux/**
-set path=~/Sites/**,~/projects/RM/trunk/core/rm-web/**
+set path=~/Sites/**,~/projects/core/**
 
 set nobackup
 set nowritebackup
@@ -68,7 +69,7 @@ endfunction
 
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
-map <D-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>
+map <C-S-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
@@ -79,6 +80,8 @@ map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-j> :TagbarOpen fj<CR>
+map <C-Up> :m-2<CR>
+map <C-Down> :m+1<CR>
 "map <PageDown> :bnext<CR>
 "map <PageUp> :bprevious<CR>
 "map <Home> :bfirst<CR>
@@ -131,4 +134,5 @@ augroup sparkup_types
   " Add sparkup to new filetypes
   autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
 augroup END
+
 
