@@ -91,6 +91,7 @@ map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>s :VimShell<CR>
 map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
+map T :tabnew<CR>
 map H 0
 map L $
 
