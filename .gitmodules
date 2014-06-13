@@ -9,9 +9,6 @@
 	path = bundle/vim-indent-guides
 	url = http://github.com/nathanaelkane/vim-indent-guides.git
     ignore = dirty
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = http://github.com/scrooloose/nerdtree.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = http://github.com/scrooloose/nerdcommenter.git
