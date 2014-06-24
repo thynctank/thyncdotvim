@@ -7,7 +7,8 @@ filetype on
 filetype plugin indent on
 syntax on
 
-let g:snippets_dir = "~/.vim/snippets"
+let g:snippets_dir = "$VIM/vimfiles/snippets"
+"let g:snippets_dir = "~/.vim/snippets"
 let g:vimshell_editor_command = "macvim"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
