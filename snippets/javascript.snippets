@@ -81,11 +81,11 @@ snippet try
 		${3}
 	}
 snippet desc
-	describe(${1}, function() {
+	describe('${1}', function() {
 		${2}
 	});
 snippet it
-	it(${1}, function(done) {
+	it('${1}', function(done) {
 		${2}
 		done();
 	});
@@ -97,3 +97,17 @@ snippet aft
 	after(function() {
 		${1}
 	});
+snippet be
+	beforeEach(function() {
+		${1}
+	});
+snippet ae
+	afterEach(function() {
+		${1}
+	});
+snippet spy
+	spyOn(${1}, '${2}');
+snippet immed
+	(function(${1}) {
+		${2}
+	}(${3}));
