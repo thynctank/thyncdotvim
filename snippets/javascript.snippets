@@ -85,6 +85,10 @@ snippet desc
 		${2}
 	});
 snippet it
+	it('${1}', function() {
+		${2}
+	});
+snippet ita
 	it('${1}', function(done) {
 		${2}
 		done();
@@ -111,3 +115,9 @@ snippet immed
 	(function(${1}) {
 		${2}
 	}(${3}));
+snippet afe
+	angular.forEach(${1}, function(${2}) {
+		${3}
+	});
+snippet exp
+	expect(${1}).${2:toBe}(${3});
