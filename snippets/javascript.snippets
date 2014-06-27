@@ -84,6 +84,10 @@ snippet desc
 	describe('${1}', function() {
 		${2}
 	});
+snippet inj
+	beforeEach(inject(function(${1}) {
+		${2}
+	}));
 snippet it
 	it('${1}', function() {
 		${2}
@@ -105,12 +109,16 @@ snippet be
 	beforeEach(function() {
 		${1}
 	});
+snippet bem
+	beforeEach(module(${1}));
 snippet ae
 	afterEach(function() {
 		${1}
 	});
 snippet spy
 	spyOn(${1}, '${2}');
+snippet cspy
+	jasmine.createSpy(${1});
 snippet immed
 	(function(${1}) {
 		${2}
