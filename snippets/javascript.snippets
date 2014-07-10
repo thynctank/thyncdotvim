@@ -11,7 +11,9 @@ snippet fun
 	}
 # Anonymous Function
 snippet f
-	function(${1}) {${2}};
+	function(${1}) {
+		${2}
+	}
 # if
 snippet if
 	if (${1:true}) {${2}}
@@ -129,3 +131,11 @@ snippet afe
 	});
 snippet exp
 	expect(${1}).${2:toBe}(${3});
+snippet ang
+	angular
+snippet runs
+	runs(function() {
+		${1}
+	});
+snippet waits
+	waits(${1});
