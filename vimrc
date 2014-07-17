@@ -139,4 +139,4 @@ augroup sparkup_types
   autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
 augroup END
 
-
+set clipboard=unnamed
