@@ -74,7 +74,6 @@ map <M-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
-map <C-t> :NERDTreeToggle<CR>
 map <C-s> call ReloadAllSnippets()<CR>
 map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
@@ -139,4 +138,5 @@ augroup sparkup_types
   autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
 augroup END
 
+"uses system clipboard as default register to yank to, paste from etc
 set clipboard=unnamed
