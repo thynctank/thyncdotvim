@@ -13,6 +13,11 @@ let g:vimshell_editor_command = "macvim"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 
+"syntastic options
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=1
+
 "solarized options
 let g:solarized_termcolors = 256
 let g:solarized_visibility = "high"
