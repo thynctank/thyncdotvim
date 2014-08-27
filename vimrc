@@ -9,7 +9,6 @@ syntax on
 
 let g:snippets_dir = "$VIM/vimfiles/snippets"
 "let g:snippets_dir = "~/.vim/snippets"
-let g:vimshell_editor_command = "macvim"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 
@@ -31,8 +30,8 @@ colorscheme solarized
 set hls is
 set foldmethod=indent   
 set foldnestmax=10  
-set foldenable       
 set foldlevel=0         
+set nofoldenable
 set nu
 set backspace=indent,eol,start
 set nowrap
@@ -45,7 +44,9 @@ set ignorecase
 set smartcase
 set infercase
 set spell spelllang=en_us
-set path^=~/Sites/**,~/projects/core/**
+set path+=.,~/Sites/**,~/projects/core/**
+
+set wildignore+=*/node_modules/**/*,*/bower_components/**/*
 
 set nobackup
 set nowritebackup
