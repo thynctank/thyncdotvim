@@ -90,3 +90,6 @@
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "bundle/gvimfullscreen"]
+	path = bundle/gvimfullscreen
+	url = https://github.com/derekmcloughlin/gvimfullscreen_win32.git

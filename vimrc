@@ -26,6 +26,8 @@ set background=dark
 colorscheme solarized
 "colorscheme vilight
 
+set visualbell
+
 
 set hls is
 set foldmethod=indent   
@@ -44,7 +46,6 @@ set ignorecase
 set smartcase
 set infercase
 set spell spelllang=en_us
-set path+=.,~/Sites/**,~/projects/core/**
 
 set wildignore+=*/node_modules/**/*,*/bower_components/**/*
 
@@ -74,7 +75,7 @@ endfunction
 
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
-map <M-r> :source $MYVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>
+map <M-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
@@ -126,6 +127,7 @@ let g:ruby_conque_rspec_command='rspec'
 "let b:match_words .=',if:endif,block:endblock'
 
 autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby<CR>
+
 
 "file extensions for gf
 autocmd BufRead,BufRead *.rb set suffixesadd=.rb
