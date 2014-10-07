@@ -11,5 +11,8 @@ else
   map <F11> <Esc>:call libcallnr("bundle/gvimfullscreen/gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
   autocmd GUIEnter * all libcallnr("bundle/gvimfullscreen/gvimfullscreen.dll", "ToggleFullScreen", 0)
 	set guifont=Lucida_Console:h14:cANSI
+  set guioptions-=m
+  set guioptions-=T
+  set guioptions-=r
 endif
 
