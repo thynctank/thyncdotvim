@@ -129,6 +129,8 @@ snippet afe
 	angular.forEach(${1}, function(${2}) {
 		${3}
 	});
+snippet acp
+	angular.copy(${1});
 snippet aid
 	angular.isDefined(${1})
 snippet abind
@@ -146,4 +148,6 @@ snippet waits
 snippet wn
 	when('${1}', {
 		templateUrl: '${2}'
-	}).
+	}).${3}
+snippet clog
+	console.log(${1});
