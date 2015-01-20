@@ -26,8 +26,10 @@ set background=dark
 colorscheme solarized
 "colorscheme vilight
 
-set visualbell
+"persistent undo
+set undofile
 
+set visualbell
 
 set hls is
 set foldmethod=indent   
