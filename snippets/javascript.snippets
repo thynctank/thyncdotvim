@@ -6,7 +6,7 @@ snippet proto
 	};
 # Function
 snippet fun
-	function ${1:function_name} (${2:argument}) {
+	function ${1:function_name}(${2:argument}) {
 		${3:// body...}
 	}
 # Anonymous Function
@@ -16,11 +16,17 @@ snippet f
 	}
 # if
 snippet if
-	if (${1:true}) {${2}}
+	if(${1:true}) {
+		${2}
+	}
 # if ... else
 snippet ife
-	if (${1:true}) {${2}}
-	else{${3}}
+	if(${1:true}) {
+		${2}
+	}
+	else {
+		${3}
+	}
 # tertiary conditional
 snippet t
 	${1:/* condition */} ? ${2:a} : ${3:b}
@@ -139,19 +145,28 @@ snippet atj
 	angular.toJson(${1})
 snippet afj
 	angular.fromJson(${1})
+snippet ael
+	angular.element(${1})
 snippet exp
 	expect(${1}).${2:toBe}(${3});
 snippet ang
 	angular${1}
-snippet runs
-	runs(function() {
-		${1}
-	});
-snippet waits
-	waits(${1});
-snippet wn
-	when('${1}', {
-		templateUrl: '${2}'
-	}).${3}
 snippet clog
 	console.log(${1});
+snippet del
+	delete ${1};
+snippet dig
+	$digest(function() {
+		${1}
+	});
+snippet evas
+	$evalAsync(function() {
+		${1}
+	});
+snippet clockin
+	jasmine.clock().install();
+snippet clockun
+	jasmine.clock().uninstall();
+snippet clockt
+	jasmine.clock().tick(${1});
+	
