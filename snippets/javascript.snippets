@@ -156,13 +156,9 @@ snippet clog
 snippet del
 	delete ${1};
 snippet dig
-	$digest(function() {
-		${1}
-	});
+	$digest(${1});
 snippet evas
-	$evalAsync(function() {
-		${1}
-	});
+	$evalAsync(${1});
 snippet clockin
 	jasmine.clock().install();
 snippet clockun
