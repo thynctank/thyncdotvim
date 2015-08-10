@@ -94,7 +94,7 @@ map <C-Down> :m+1<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
-map <Leader>s :VimShell<CR>
+"map <Leader>s :VimShell<CR>
 map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
 map T :tabnew<CR>
