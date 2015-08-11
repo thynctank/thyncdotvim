@@ -100,6 +100,7 @@ map <Leader>f :call ToggleFold()<CR>
 map T :tabnew<CR>
 map H 0
 map L $
+map <D-Enter> :call ToggleFull()<CR>
 
 command! Gpull :Git pull
 command! Gpush :Git push

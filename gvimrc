@@ -7,6 +7,15 @@ if has("gui_macvim")
 	set guifont=Menlo_Regular:h18
 	set fu
   set toolbar=""
+
+  function! ToggleFull()
+    if &fullscreen == 1
+      set nofullscreen
+    else
+      set fullscreen
+    end
+  endfunction
+
 else
   map <F11> <Esc>:call libcallnr("bundle/gvimfullscreen/gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
   autocmd GUIEnter * call libcallnr("bundle/gvimfullscreen/gvimfullscreen.dll", "ToggleFullScreen", 0)
