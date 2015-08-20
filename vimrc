@@ -22,6 +22,13 @@ let g:solarized_termcolors = 256
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 
+"vim-angular options
+let g:angular_source_directory='rm-web'
+let g:angular_test_directory='rm-web'
+
+"let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
+let syntastic_mode_map = {'passive_filetypes': ['html']}
+
 set background=dark
 colorscheme solarized
 "colorscheme vilight
