@@ -99,3 +99,9 @@
 [submodule "bundle/vim-angular"]
 	path = bundle/vim-angular
 	url = https://github.com/burnettk/vim-angular.git
+[submodule "bundle/vim-jdaddy"]
+	path = bundle/vim-jdaddy
+	url = https://github.com/tpope/vim-jdaddy.git
+[submodule "bundle/cycle.vim"]
+	path = bundle/cycle.vim
+	url = https://github.com/zef/vim-cycle.git
