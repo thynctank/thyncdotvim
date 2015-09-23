@@ -19,8 +19,9 @@ let g:syntastic_auto_loc_list=1
 
 "solarized options
 let g:solarized_termcolors = 256
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
+let g:solarized_termtrans = 1
+let g:solarized_visibility = "normal"
+let g:solarized_contrast = "normal"
 
 "vim-angular options
 let g:angular_source_directory='rm-web'

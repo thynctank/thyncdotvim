@@ -105,3 +105,9 @@
 [submodule "bundle/cycle.vim"]
 	path = bundle/cycle.vim
 	url = https://github.com/zef/vim-cycle.git
+[submodule "bundle/taskpaper"]
+	path = bundle/taskpaper
+	url = https://github.com/davidoc/taskpaper.vim.git
+[submodule "bundle/todo.txt-vim"]
+	path = bundle/todo.txt-vim
+	url = https://github.com/freitass/todo.txt-vim.git

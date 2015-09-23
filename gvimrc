@@ -2,7 +2,7 @@
 "au GUIEnter * IndentGuidesToggle
 
 if has("gui_macvim")
-  set transparency=10
+  set transparency=25
 	set fuopt+=maxhorz
 	set guifont=Menlo_Regular:h18
 	set fu
