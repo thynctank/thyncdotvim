@@ -12,6 +12,8 @@ let g:snippets_dir = "~/.vim/snippets"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 
+let g:vimwiki_list = [{'path': '~/Dropbox/trunksync/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
+
 "syntastic options
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=1
