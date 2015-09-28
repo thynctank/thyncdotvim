@@ -114,6 +114,3 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/ProportionalResize"]
-	path = bundle/ProportionalResize
-	url = https://github.com/vim-scripts/ProportionalResize.git
