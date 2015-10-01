@@ -30,7 +30,7 @@ let g:angular_source_directory='rm-web'
 let g:angular_test_directory='rm-web'
 
 "let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
-let syntastic_mode_map = {'passive_filetypes': ['html']}
+"let syntastic_mode_map = {'passive_filetypes': ['html']}
 
 set background=dark
 colorscheme solarized
@@ -131,6 +131,8 @@ cabbrev cdh Cdhere
 
 command! ReloadAllSnippets :call ReloadAllSnippets()
 cabbrev rs ReloadAllSnippets 
+
+command! Tidy :!tidy -q -i "%" -m
 
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
