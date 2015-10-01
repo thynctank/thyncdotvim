@@ -31,6 +31,7 @@ let g:angular_test_directory='rm-web'
 
 "let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
 "let syntastic_mode_map = {'passive_filetypes': ['html']}
+let g:syntastic_quiet_warnings=1
 
 set background=dark
 colorscheme solarized
