@@ -4,7 +4,7 @@ runtime macros/matchit.vim
 call pathogen#infect()
 call pathogen#helptags()
 filetype on
-filetype plugin indent on
+"filetype plugin indent on
 syntax on
 
 "let g:snippets_dir = "$VIM/vimfiles/snippets"
@@ -41,6 +41,10 @@ colorscheme solarized
 set undofile
 
 set visualbell
+
+"Keep current window at 130 chars when split
+set winwidth=130
+set winheight=30
 
 set hls is
 set foldmethod=indent   
@@ -88,7 +92,8 @@ endfunction
 
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
-map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>
+map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:call ReloadAllSnippets()<CR>
+"map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
