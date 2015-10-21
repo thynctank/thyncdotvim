@@ -64,7 +64,7 @@ set smartcase
 set infercase
 set spell spelllang=en_us
 
-set wildignore+=*/node_modules/**/*,*/bower_components/**/*
+set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*
 
 set nobackup
 set nowritebackup
@@ -157,6 +157,9 @@ autocmd BufRead,BufRead *.coffee set suffixesadd=.coffee
 autocmd BufRead,BufRead *.js set suffixesadd=.js
 autocmd BufRead,BufRead *.html set suffixesadd=.html
 autocmd BufRead,BufRead *.md set ft=markdown
+
+"custom cycles for cycle.vim
+call AddCycleGroup('javascript', ['spin', 'stop'])
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.
