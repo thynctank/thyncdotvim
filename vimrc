@@ -21,7 +21,7 @@ let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 
 "solarized options
-let g:solarized_termcolors = 256
+let g:solarized_termcolors = 16
 let g:solarized_termtrans = 1
 let g:solarized_visibility = "normal"
 let g:solarized_contrast = "normal"
@@ -166,6 +166,9 @@ autocmd BufRead,BufRead *.md set ft=markdown
 "custom cycles for cycle.vim
 call AddCycleGroup('javascript', ['spin', 'stop'])
 call AddCycleGroup('vim', ['light', 'dark'])
+call AddCycleGroup(['back', 'forward'])
+call AddCycleGroup(['bk', 'fwd'])
+call AddCycleGroup(['increment', 'decrement'])
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.
