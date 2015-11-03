@@ -1,4 +1,5 @@
 filetype off
+autocmd!
 runtime ./bundle/vim-pathogen/autoload/pathogen.vim
 runtime ./macros/matchit.vim
 call pathogen#infect()
@@ -33,8 +34,11 @@ let g:angular_test_directory='rm-web'
 "let syntastic_mode_map = {'passive_filetypes': ['html']}
 let g:syntastic_quiet_warnings=1
 
-set term=xterm-256color
-set background=light
+if !has("gui_running")
+  set term=xterm-256color
+endif
+
+set background=dark
 colorscheme solarized
 "colorscheme vilight
 
