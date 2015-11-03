@@ -169,6 +169,7 @@ call AddCycleGroup('vim', ['light', 'dark'])
 call AddCycleGroup(['back', 'forward'])
 call AddCycleGroup(['bk', 'fwd'])
 call AddCycleGroup(['increment', 'decrement'])
+call AddCycleGroup(['next', 'prev'])
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.
