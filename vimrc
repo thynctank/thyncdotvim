@@ -1,6 +1,6 @@
 filetype off
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-runtime macros/matchit.vim
+runtime ./bundle/vim-pathogen/autoload/pathogen.vim
+runtime ./macros/matchit.vim
 call pathogen#infect()
 call pathogen#helptags()
 filetype on
@@ -33,7 +33,8 @@ let g:angular_test_directory='rm-web'
 "let syntastic_mode_map = {'passive_filetypes': ['html']}
 let g:syntastic_quiet_warnings=1
 
-set background=dark
+set term=xterm-256color
+set background=light
 colorscheme solarized
 "colorscheme vilight
 
@@ -160,6 +161,7 @@ autocmd BufRead,BufRead *.md set ft=markdown
 
 "custom cycles for cycle.vim
 call AddCycleGroup('javascript', ['spin', 'stop'])
+call AddCycleGroup('vim', ['light', 'dark'])
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.
