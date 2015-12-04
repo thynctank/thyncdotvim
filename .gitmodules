@@ -137,10 +137,6 @@
 	path = bundle/taskpaper
 	url = https://github.com/davidoc/taskpaper.vim.git
   ignore = dirty
-[submodule "bundle/todo.txt-vim"]
-	path = bundle/todo.txt-vim
-	url = https://github.com/freitass/todo.txt-vim.git
-  ignore = dirty
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
@@ -160,9 +156,12 @@
 [submodule "bundle/vim-textobj-uri"]
 	path = bundle/vim-textobj-uri
 	url = https://github.com/jceb/vim-textobj-uri.git
+  ignore = dirty
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+  ignore = dirty
 [submodule "/Users/k23995/.vim/bundle/vim-signify"]
 	path = /Users/k23995/.vim/bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify
+  ignore = dirty
