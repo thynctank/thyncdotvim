@@ -15,6 +15,8 @@ let g:ctrlp_extensions = ['tag', 'mixed']
 
 let g:vimwiki_list = [{'path': '~/Dropbox/trunksync/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
 
+let g:airline_powerline_fonts = 0
+
 "syntastic options
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=1
