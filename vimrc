@@ -38,6 +38,7 @@ if !has("gui_running")
   set term=xterm-256color
 endif
 
+set laststatus=2
 set background=dark
 colorscheme solarized
 "colorscheme vilight
@@ -170,6 +171,7 @@ call AddCycleGroup(['back', 'forward'])
 call AddCycleGroup(['bk', 'fwd'])
 call AddCycleGroup(['increment', 'decrement'])
 call AddCycleGroup(['next', 'prev'])
+call AddCycleGroup(['success', 'prev'])
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.

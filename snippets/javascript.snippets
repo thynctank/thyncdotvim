@@ -183,3 +183,9 @@ snippet dqs
 	document.querySelector(${1});
 snippet dqsa
 	document.querySelectorAll(${1});
+snip then 
+  then(function success(res) {
+    ${1}
+  }, function err(res) {
+    ${2}
+  })

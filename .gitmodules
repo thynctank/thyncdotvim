@@ -157,3 +157,12 @@
 	path = bundle/vim-textobj-user
 	url = https://github.com/kana/vim-textobj-user.git
   ignore = dirty
+[submodule "bundle/vim-textobj-uri"]
+	path = bundle/vim-textobj-uri
+	url = https://github.com/jceb/vim-textobj-uri.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule "/Users/k23995/.vim/bundle/vim-signify"]
+	path = /Users/k23995/.vim/bundle/vim-signify
+	url = https://github.com/mhinz/vim-signify
