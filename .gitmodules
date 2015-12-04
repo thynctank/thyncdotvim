@@ -26,7 +26,7 @@
 	path = bundle/vim-surround
 	url = http://github.com/tpope/vim-surround.git
   ignore = dirty
-    ignore = dirty
+  ignore = dirty
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = http://github.com/tpope/vim-repeat.git
@@ -39,10 +39,6 @@
 	path = bundle/vim-session
 	url = http://github.com/xolox/vim-session.git
   ignore = dirty
-    ignore = dirty
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = http://github.com/scrooloose/syntastic.git
   ignore = dirty
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
@@ -68,7 +64,7 @@
 	path = bundle/multichange.vim
 	url = https://github.com/AndrewRadev/multichange.vim.git
   ignore = dirty
-    ignore = dirty
+  ignore = dirty
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
