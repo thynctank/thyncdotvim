@@ -40,10 +40,6 @@
 	url = http://github.com/xolox/vim-session.git
   ignore = dirty
   ignore = dirty
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = http://github.com/scrooloose/syntastic.git
-  ignore = dirty
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
