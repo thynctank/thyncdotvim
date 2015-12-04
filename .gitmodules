@@ -161,3 +161,7 @@
 	path = bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify
   ignore = dirty
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+  ignore = dirty
