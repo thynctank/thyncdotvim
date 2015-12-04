@@ -161,7 +161,7 @@
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
   ignore = dirty
-[submodule "/Users/k23995/.vim/bundle/vim-signify"]
-	path = /Users/k23995/.vim/bundle/vim-signify
+[submodule "bundle/vim-signify"]
+	path = bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify
   ignore = dirty
