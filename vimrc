@@ -23,6 +23,10 @@ let g:syntastic_check_on_wq=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 
+"ycm options
+let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
+
 "solarized options
 let g:solarized_termcolors = 16
 let g:solarized_termtrans = 1
@@ -35,7 +39,7 @@ let g:angular_test_directory='rm-web'
 
 "let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
 "let syntastic_mode_map = {'passive_filetypes': ['html']}
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 if !has("gui_running")
   set term=xterm-256color
@@ -52,8 +56,7 @@ set undofile
 set visualbell
 
 "Keep current window at 130 chars when split
-set winwidth=130
-set winheight=30
+set winwidth=200
 
 set hls is
 set foldmethod=indent   
