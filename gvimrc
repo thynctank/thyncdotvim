@@ -4,7 +4,7 @@
 if has("gui_macvim")
   set transparency=15
 	set fuopt+=maxhorz
-	set guifont=Menlo_Regular:h18
+	set guifont=Menlo_Regular:h14
 	set fu
   set toolbar=""
 
