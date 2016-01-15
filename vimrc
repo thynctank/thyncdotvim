@@ -5,7 +5,7 @@ runtime ./macros/matchit.vim
 call pathogen#infect()
 call pathogen#helptags()
 filetype on
-"filetype plugin indent on
+filetype plugin indent on
 syntax on
 
 "let g:snippets_dir = "$VIM/vimfiles/snippets"
@@ -171,13 +171,13 @@ autocmd BufRead,BufRead *.html set suffixesadd=.html
 autocmd BufRead,BufRead *.md set ft=markdown
 
 "custom cycles for cycle.vim
-call AddCycleGroup('javascript', ['spin', 'stop'])
-call AddCycleGroup('vim', ['light', 'dark'])
-call AddCycleGroup(['back', 'forward'])
-call AddCycleGroup(['bk', 'fwd'])
-call AddCycleGroup(['increment', 'decrement'])
-call AddCycleGroup(['next', 'prev'])
-call AddCycleGroup(['success', 'prev'])
+"call AddCycleGroup('javascript', ['spin', 'stop'])
+"call AddCycleGroup('vim', ['light', 'dark'])
+"call AddCycleGroup(['back', 'forward'])
+"call AddCycleGroup(['bk', 'fwd'])
+"call AddCycleGroup(['increment', 'decrement'])
+"call AddCycleGroup(['next', 'prev'])
+"call AddCycleGroup(['success', 'prev'])
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.
