@@ -8,10 +8,15 @@ filetype on
 filetype plugin indent on
 syntax on
 
-"let g:snippets_dir = "$VIM/vimfiles/snippets"
-let g:snippets_dir = "~/.vim/snippets"
+let g:snippets_dir = "~/vimfiles/snippets"
+"let g:snippets_dir = "~/.vim/snippets"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 let g:vimwiki_list = [{'path': '~/Dropbox/trunksync/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
 
@@ -34,8 +39,8 @@ let g:solarized_visibility = "normal"
 let g:solarized_contrast = "normal"
 
 "vim-angular options
-let g:angular_source_directory='rm-web'
-let g:angular_test_directory='rm-web'
+let g:angular_source_directory='src/app'
+let g:angular_test_directory='src/app'
 
 "let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
 "let syntastic_mode_map = {'passive_filetypes': ['html']}
@@ -76,7 +81,8 @@ set smartcase
 set infercase
 set spell spelllang=en_us
 
-set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*
+set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*
+set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*
 
 set nobackup
 set nowritebackup
