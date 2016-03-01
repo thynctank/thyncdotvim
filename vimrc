@@ -61,7 +61,7 @@ set undofile
 set visualbell
 
 "Keep current window at 130 chars when split
-set winwidth=200
+set winwidth=160
 
 set hls is
 set foldmethod=indent   
