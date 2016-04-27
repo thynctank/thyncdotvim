@@ -13,12 +13,12 @@ let g:snippets_dir = "~/vimfiles/snippets"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules)$',
+  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules|complexity|coverage)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-let g:vimwiki_list = [{'path': '~/Dropbox/trunksync/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
+let g:vimwiki_list = [{'path': '~/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
 
 let g:airline_powerline_fonts = 0
 
@@ -81,8 +81,8 @@ set smartcase
 set infercase
 set spell spelllang=en_us
 
-set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*
-set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*
+set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*
+set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*
 
 set nobackup
 set nowritebackup

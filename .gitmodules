@@ -170,3 +170,6 @@
 	url = https://github.com/Valloric/YouCompleteMe
   ignore = dirty
 
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
