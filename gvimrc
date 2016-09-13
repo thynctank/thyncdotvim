@@ -1,7 +1,8 @@
 "set go=""
-"au GUIEnter * IndentGuidesToggle
+au GUIEnter * IndentGuidesToggle
 
 if has("gui_macvim")
+  let g:solarized_termcolors=256
   set transparency=15
 	set fuopt+=maxhorz
 	set guifont=Menlo_Regular:h16

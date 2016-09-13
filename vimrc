@@ -8,8 +8,8 @@ filetype on
 filetype plugin indent on
 syntax on
 
-let g:snippets_dir = "~/vimfiles/snippets"
-"let g:snippets_dir = "~/.vim/snippets"
+"let g:snippets_dir = "~/vimfiles/snippets"
+let g:snippets_dir = "~/.vim/snippets"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 let g:ctrlp_custom_ignore = {
@@ -131,10 +131,11 @@ map <Leader>m :CtrlPMRUFiles<CR>
 "map <Leader>s :VimShell<CR>
 map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
+map <C-i> :IndentGuidesToggle<CR>
 map T :tabnew<CR>
 map H 0
 map L $
-map <D-Enter> :call ToggleFull()<CR>
+map <D-Enter>:call ToggleFull()<CR>
 
 command! Gpull :Git pull
 command! Gpush :Git push
@@ -179,10 +180,10 @@ autocmd BufRead,BufRead *.md set ft=markdown
 "custom cycles for cycle.vim
 "call AddCycleGroup('javascript', ['spin', 'stop'])
 "call AddCycleGroup('vim', ['light', 'dark'])
-"call AddCycleGroup(['back', 'forward'])
-"call AddCycleGroup(['bk', 'fwd'])
-"call AddCycleGroup(['increment', 'decrement'])
-"call AddCycleGroup(['next', 'prev'])
+call AddCycleGroup(['back', 'forward'])
+call AddCycleGroup(['bk', 'fwd'])
+call AddCycleGroup(['increment', 'decrement'])
+call AddCycleGroup(['next', 'prev'])
 "call AddCycleGroup(['success', 'prev'])
 
 augroup sparkup_types
