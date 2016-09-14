@@ -58,6 +58,9 @@ colorscheme solarized
 "persistent undo
 set undofile
 
+"autoread for when timestamp changes on vcs checkout or modification outside editor
+set autoread
+
 set visualbell
 
 "Keep current window at 130 chars when split
