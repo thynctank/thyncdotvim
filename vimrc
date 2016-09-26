@@ -95,13 +95,13 @@ set noswapfile
 set grepprg=ack\ --nogroup\ --column
 set grepformat=%f:%l:%c:%m
 
-function! ToggleWrap()
-   if &wrap == 1
-      set nowrap
-   else
-      set wrap
-   endif
-endfunction
+"function! ToggleWrap()
+   "if &wrap == 1
+      "set nowrap
+   "else
+      "set wrap
+   "endif
+"endfunction
 
 function! ToggleFold()
     if &foldenable == 1
@@ -124,17 +124,18 @@ map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-j> :TagbarOpen fj<CR>
-map <C-Up> :m-2<CR>
-map <C-Down> :m+1<CR>
+"map <C-Up> :m-2<CR>
+"map <C-Down> :m+1<CR>
 "map <PageDown> :bnext<CR>
 "map <PageUp> :bprevious<CR>
 "map <Home> :bfirst<CR>
 "map <End> :blast<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
+map <Leader>t :CtrlPTag<CR>
 "map <Leader>s :VimShell<CR>
-map <Leader>w :call ToggleWrap()<CR>
+"map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
-map <C-i> :IndentGuidesToggle<CR>
+map <S-i> :IndentGuidesToggle<CR>
 map T :tabnew<CR>
 map H 0
 map L $
@@ -169,6 +170,8 @@ let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
 let g:session_default_to_last = 1
 let g:ruby_conque_rspec_command='rspec'
+
+
 
 "let b:match_words .=',if:endif,block:endblock'
 
