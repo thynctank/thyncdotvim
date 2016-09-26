@@ -13,7 +13,7 @@ let g:snippets_dir = "~/.vim/snippets"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules|complexity|coverage)$',
+  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules|complexity|coverage|3rdparty)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
@@ -84,8 +84,8 @@ set smartcase
 set infercase
 set spell spelllang=en_us
 
-set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*
-set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*
+set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
+set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\3rdparty\**\*
 
 set nobackup
 set nowritebackup
@@ -139,6 +139,9 @@ map T :tabnew<CR>
 map H 0
 map L $
 map <D-Enter>:call ToggleFull()<CR>
+
+"ensure very magic search by default
+noremap / /\v
 
 command! Gpull :Git pull
 command! Gpush :Git push
