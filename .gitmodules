@@ -178,3 +178,6 @@
 	url = git://github.com/tpope/vim-unimpaired.git
   ignore = dirty
 
+[submodule "bundle/tern_for_vim"]
+	path = bundle/tern_for_vim
+	url = git://github.com/ternjs/tern_for_vim.git
