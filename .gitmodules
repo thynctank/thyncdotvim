@@ -169,10 +169,14 @@
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
   ignore = dirty
-
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+  ignore = dirty
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+  ignore = dirty
+[submodule "bundle/tern_form_vim"]
+	path = bundle/tern_form_vim
+	url = git://github.com/ternjs/tern_for_vim.git
