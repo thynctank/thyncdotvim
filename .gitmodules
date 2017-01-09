@@ -181,3 +181,7 @@
 	path = bundle/tern_for_vim
 	url = git://github.com/ternjs/tern_for_vim.git
   ignore = dirty
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = git://github.com/mustache/vim-mustache-handlebars.git
+  ignore = dirty
