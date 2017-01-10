@@ -2,10 +2,6 @@
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim.git
   ignore = dirty
-[submodule "bundle/vim-indent-guides"]
-	path = bundle/vim-indent-guides
-	url = http://github.com/nathanaelkane/vim-indent-guides.git
-  ignore = dirty
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = http://github.com/scrooloose/nerdcommenter.git
