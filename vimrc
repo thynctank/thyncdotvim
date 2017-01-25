@@ -96,13 +96,13 @@ set noswapfile
 set grepprg=ack\ --nogroup\ --column
 set grepformat=%f:%l:%c:%m
 
-"function! ToggleWrap()
-   "if &wrap == 1
-      "set nowrap
-   "else
-      "set wrap
-   "endif
-"endfunction
+function! ToggleWrap()
+   if &wrap == 1
+      set nowrap
+   else
+      set wrap
+   endif
+endfunction
 
 function! ToggleFold()
     if &foldenable == 1
@@ -134,13 +134,11 @@ map <C-j> :TagbarOpen fj<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>t :CtrlPTag<CR>
 "map <Leader>s :VimShell<CR>
-"map <Leader>w :call ToggleWrap()<CR>
+map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
-map <S-i> :IndentGuidesToggle<CR>
 map T :tabnew<CR>
 map H 0
 map L $
-map <D-Enter>:call ToggleFull()<CR>
 
 "ensure very magic search by default
 noremap / /\v
