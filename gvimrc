@@ -1,5 +1,3 @@
-"set go=""
-
 if has("gui_macvim")
   let g:solarized_termcolors=256
   set transparency=15
