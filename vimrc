@@ -119,7 +119,6 @@ map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
-map <C-s> :VimShellBufferDir<CR>
 map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
@@ -133,7 +132,7 @@ map <C-j> :TagbarOpen fj<CR>
 "map <End> :blast<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>t :CtrlPTag<CR>
-"map <Leader>s :VimShell<CR>
+map <Leader>s :VimShellBufferDir<CR>
 map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
 map T :tabnew<CR>
