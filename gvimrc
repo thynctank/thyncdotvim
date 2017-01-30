@@ -1,6 +1,17 @@
 "set go=""
 au GUIEnter * IndentGuidesToggle
 
+"custom cycles for cycle.vim
+"(breaks on term vim)
+"call AddCycleGroup('javascript', ['spin', 'stop'])
+"call AddCycleGroup('vim', ['light', 'dark'])
+call AddCycleGroup(['back', 'forward'])
+call AddCycleGroup(['bk', 'fwd'])
+call AddCycleGroup(['increment', 'decrement'])
+call AddCycleGroup(['next', 'prev'])
+call AddCycleGroup(['on', 'off'])
+"call AddCycleGroup(['success', 'prev'])
+
 if has("gui_macvim")
   let g:solarized_termcolors=256
   set transparency=15

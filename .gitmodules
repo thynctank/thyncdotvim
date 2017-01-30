@@ -181,3 +181,13 @@
 	path = bundle/mustache
 	url = git://github.com/mustache/vim-mustache-handlebars.git
   ignore = dirty
+[submodule "vimshell.vim"]
+	path = bundle/vimshell.vim
+	url = https://github.com/shougo/vimshell.vim
+  ignore = dirty
+[submodule "bundle/vimshell.vim"]
+	path = bundle/vimshell.vim
+	url = https://github.com/shougo/vimshell.vim
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = http://github.com/Shougo/vimproc

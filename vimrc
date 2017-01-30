@@ -115,7 +115,7 @@ endfunction
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
 map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:call ReloadAllSnippets()<CR>
-"map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>
+"map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>ce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
@@ -184,15 +184,6 @@ autocmd BufRead,BufRead *.coffee set suffixesadd=.coffee
 autocmd BufRead,BufRead *.js set suffixesadd=.js
 autocmd BufRead,BufRead *.html set suffixesadd=.html
 autocmd BufRead,BufRead *.md set ft=markdown
-
-"custom cycles for cycle.vim
-"call AddCycleGroup('javascript', ['spin', 'stop'])
-"call AddCycleGroup('vim', ['light', 'dark'])
-call AddCycleGroup(['back', 'forward'])
-call AddCycleGroup(['bk', 'fwd'])
-call AddCycleGroup(['increment', 'decrement'])
-call AddCycleGroup(['next', 'prev'])
-"call AddCycleGroup(['success', 'prev'])
 
 augroup sparkup_types
   " Remove ALL autocommands of the current group.
