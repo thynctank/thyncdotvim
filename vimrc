@@ -119,7 +119,7 @@ map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
-map <C-s> call ReloadAllSnippets()<CR>
+map <C-s> :VimShellBufferDir<CR>
 map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
