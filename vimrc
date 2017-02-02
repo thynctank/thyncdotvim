@@ -115,7 +115,6 @@ endfunction
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
 map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:call ReloadAllSnippets()<CR>
-"map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>rce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>ce $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:IndentGuidesEnable<CR>:call ReloadAllSnippets()<CR>
 map <D-t> :tabnew<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
@@ -124,12 +123,6 @@ map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-j> :TagbarOpen fj<CR>
-"map <C-Up> :m-2<CR>
-"map <C-Down> :m+1<CR>
-"map <PageDown> :bnext<CR>
-"map <PageUp> :bprevious<CR>
-"map <Home> :bfirst<CR>
-"map <End> :blast<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>t :CtrlPTag<CR>
 map <Leader>s :VimShellBufferDir<CR>
