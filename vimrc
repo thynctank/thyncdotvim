@@ -25,7 +25,7 @@ let g:airline_powerline_fonts = 0
 "syntastic options
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=1
-let g:syntastic_auto_jump=1
+"let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 
 "ycm options
@@ -96,22 +96,6 @@ set noswapfile
 set grepprg=ack\ --nogroup\ --column
 set grepformat=%f:%l:%c:%m
 
-function! ToggleWrap()
-   if &wrap == 1
-      set nowrap
-   else
-      set wrap
-   endif
-endfunction
-
-function! ToggleFold()
-    if &foldenable == 1
-        set nofoldenable
-    else
-        set foldenable
-    endif
-endfunction
-
 let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
 map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:call ReloadAllSnippets()<CR>
@@ -122,7 +106,7 @@ map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
-map <C-j> :TagbarOpen fj<CR>
+map <C-j> :TagbarOpenAutoClose<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>t :CtrlPTag<CR>
 map <Leader>s :VimShellBufferDir<CR>
