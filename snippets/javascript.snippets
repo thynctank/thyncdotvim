@@ -16,12 +16,12 @@ snippet f
 	}
 # if
 snippet if
-	if(${1:true}) {
+	if (${1:true}) {
 		${2}
 	}
 # if ... else
 snippet ife
-	if(${1:true}) {
+	if (${1:true}) {
 		${2}
 	}
 	else {
@@ -32,7 +32,7 @@ snippet el
 		${1}
 	}
 snippet elf
-	else if(${1}) {
+	else if (${1}) {
 		${2}
 	}
 # tertiary conditional
@@ -99,7 +99,7 @@ snippet try
 snippet iif
 	(function(${1:params}) {
 		${2}
-	})($1);
+	}($1));
 snippet desc
 	describe('${1}', function() {
 		${2}
@@ -191,3 +191,7 @@ snippet then
   })
 snippet req
 	require('${1}')
+snippet esdis
+	/* eslint-disable ${1} */
+snippet esen
+	/* eslint-enable ${1} */
