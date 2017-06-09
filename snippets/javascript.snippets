@@ -1,17 +1,17 @@
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
-	function(${3:first_argument}) {
+	function (${3:first_argument}) {
 		${4:// body...}
 	};
 # Function
 snippet fun
-	function ${1:function_name}(${2:argument}) {
+	function ${1:function_name} (${2:argument}) {
 		${3:// body...}
 	}
 # Anonymous Function
 snippet f
-	function(${1}) {
+	function (${1}) {
 		${2}
 	}
 # if
@@ -76,12 +76,12 @@ snippet do
 	} while (${1:/* condition */});
 # Object Method
 snippet :f
-	${1:method_name}: function(${2:attribute}) {
+	${1:method_name}: function (${2:attribute}) {
 		${4}
 	}${3:,}
 # setTimeout function
 snippet timeout
-	setTimeout(function() {${3}}${2}, ${1:10};
+	setTimeout(function () {${3}}${2}, ${1:10};
 # Get Elements
 snippet get
 	getElementsBy${1:TagName}('${2}')${3}
@@ -97,42 +97,42 @@ snippet try
 		${3}
 	}
 snippet iif
-	(function(${1:params}) {
+	(function (${1:params}) {
 		${2}
 	}($1));
 snippet desc
-	describe('${1}', function() {
+	describe('${1}', function () {
 		${2}
 	});
 snippet inj
-	beforeEach(inject(function(${1}) {
+	beforeEach(inject(function (${1}) {
 		${2}
 	}));
 snippet it
-	it('${1}', function() {
+	it('${1}', function () {
 		${2}
 	});
 snippet ita
-	it('${1}', function(done) {
+	it('${1}', function (done) {
 		${2}
 		done();
 	});
 snippet bf
-	before(function() {
+	before(function () {
 		${1}
 	});
 snippet aft
-	after(function() {
+	after(function () {
 		${1}
 	});
 snippet be
-	beforeEach(function() {
+	beforeEach(function () {
 		${1}
 	});
 snippet bem
 	beforeEach(module(${1}));
 snippet ae
-	afterEach(function() {
+	afterEach(function () {
 		${1}
 	});
 snippet spy
@@ -140,11 +140,11 @@ snippet spy
 snippet cspy
 	jasmine.createSpy(${1});
 snippet immed
-	(function(${1}) {
+	(function (${1}) {
 		${2}
 	}(${3}));
 snippet afe
-	angular.forEach(${1}, function(${2}) {
+	angular.forEach(${1}, function (${2}) {
 		${3}
 	});
 snippet acp
