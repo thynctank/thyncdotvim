@@ -200,3 +200,6 @@
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "bundle/syntastic-local-eslint"]
+	path = bundle/syntastic-local-eslint
+	url = https://github.com/mtscout6/syntastic-local-eslint.vim.git

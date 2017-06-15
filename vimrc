@@ -26,7 +26,10 @@ let g:airline_powerline_fonts = 0
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=1
 let g:syntastic_auto_jump=1
+let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
+let g:airline#extensions#ycm#enabled = 1
+let g:airline#extensions#ycm#error_symbol = 'E:'
 
 "ycm options
 let g:ycm_key_list_select_completion = ['<Down>']
@@ -54,6 +57,7 @@ endif
 
 set laststatus=2
 set background=dark
+set completeopt-=preview
 colorscheme solarized
 "colorscheme vilight
 
