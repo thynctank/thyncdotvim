@@ -29,5 +29,7 @@ call AddCycleGroup(['increment', 'decrement'])
 call AddCycleGroup(['next', 'prev'])
 call AddCycleGroup(['on', 'off'])
 call AddCycleGroup(['enable', 'disable'])
+call AddCycleGroup(['light', 'dark'])
+
 
 

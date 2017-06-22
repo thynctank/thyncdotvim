@@ -203,3 +203,9 @@
 [submodule "bundle/syntastic-local-eslint"]
 	path = bundle/syntastic-local-eslint
 	url = https://github.com/mtscout6/syntastic-local-eslint.vim.git
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "bundle/powerline-fonts"]
+	path = bundle/powerline-fonts
+	url = https://github.com/powerline/fonts.git

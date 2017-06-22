@@ -20,7 +20,11 @@ let g:ctrlp_custom_ignore = {
 
 let g:vimwiki_list = [{'path': '~/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
 
-let g:airline_powerline_fonts = 0
+"airline options
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#ycm#enabled = 1
+let g:airline#extensions#ycm#error_symbol = 'E:'
 
 "syntastic options
 let g:syntastic_check_on_open=1
@@ -28,8 +32,6 @@ let g:syntastic_check_on_wq=1
 let g:syntastic_auto_jump=1
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
-let g:airline#extensions#ycm#enabled = 1
-let g:airline#extensions#ycm#error_symbol = 'E:'
 
 "ycm options
 let g:ycm_key_list_select_completion = ['<Down>']
@@ -59,6 +61,7 @@ set laststatus=2
 set background=dark
 set completeopt-=preview
 colorscheme solarized
+let g:airline_theme='solarized'
 "colorscheme vilight
 
 "persistent undo
