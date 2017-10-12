@@ -15,7 +15,7 @@ if has("gui_macvim")
   endfunction
 
 else
-	set guifont=Lucida_Console:h12:cANSI
+	set guifont=Monospace\ 12
   set guioptions-=m
   set guioptions-=T
   set guioptions-=r
