@@ -15,7 +15,7 @@ if has("gui_macvim")
   endfunction
 
 else
-	set guifont=Monospace\ 12
+  set guifont=DejaVu_Sans_Mono_for_Powerline:h11:b:cANSI:qDRAFT
   set guioptions-=m
   set guioptions-=T
   set guioptions-=r

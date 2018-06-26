@@ -8,8 +8,8 @@ filetype on
 filetype plugin indent on
 syntax on
 
-"let g:snippets_dir = "~/vimfiles/snippets"
-let g:snippets_dir = "~/.vim/snippets"
+let g:snippets_dir = "~/vimfiles/snippets"
+"let g:snippets_dir = "~/.vim/snippets"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 let g:ctrlp_custom_ignore = {
@@ -21,7 +21,7 @@ let g:ctrlp_custom_ignore = {
 let g:vimwiki_list = [{'path': '~/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
 
 "airline options
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#ycm#enabled = 1
 let g:airline#extensions#ycm#error_symbol = 'E:'
@@ -73,7 +73,7 @@ set autoread
 set visualbell
 
 "Keep current window at 130 chars when split
-set winwidth=160
+set winwidth=80
 
 set hls is
 set foldmethod=indent   
@@ -94,7 +94,7 @@ set infercase
 set spell spelllang=en_us
 set cursorline cursorcolumn
 
-set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
+"set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
 set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\3rdparty\**\*
 
 set nobackup
