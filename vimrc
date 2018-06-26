@@ -36,6 +36,10 @@ let g:syntastic_auto_loc_list=1
 "ycm options
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
 
 "solarized options
 let g:solarized_termcolors = 16
