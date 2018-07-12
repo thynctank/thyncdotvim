@@ -81,10 +81,10 @@
 	path = bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus.git
   ignore = dirty
-[submodule "bundle/vim-sparkup"]
-	path = bundle/vim-sparkup
-	url = https://github.com/tristen/vim-sparkup.git
-  ignore = dirty
+#[submodule "bundle/sparkup"]
+#	path = bundle/sparkup
+#	url = https://github.com/rstacruz/sparkup.git
+#  ignore = dirty
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
