@@ -13,7 +13,7 @@ let g:snippets_dir = "~/vimfiles/snippets"
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules|complexity|coverage|3rdparty)$',
+  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules|complexity|coverage|3rdparty|target)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
@@ -64,9 +64,9 @@ endif
 set laststatus=2
 set background=dark
 set completeopt-=preview
-colorscheme solarized
+"colorscheme solarized
 let g:airline_theme='solarized'
-"colorscheme vilight
+colorscheme vilight
 
 "persistent undo
 set undofile
@@ -99,7 +99,7 @@ set spell spelllang=en_us
 set cursorline cursorcolumn
 
 "set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
-set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\3rdparty\**\*
+set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\\3rdparty\\**\\*,*\\target\\**\\*,*\\angular-1*\\**\\*
 
 set nobackup
 set nowritebackup
@@ -126,8 +126,8 @@ map <Leader>s :VimShellBufferDir<CR>
 map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
 map T :tabnew<CR>
-map H 0
-map L $
+"map H 0
+"map L $
 
 "ensure very magic search by default
 noremap / /\v
@@ -173,13 +173,6 @@ autocmd BufRead,BufRead *.coffee set suffixesadd=.coffee
 autocmd BufRead,BufRead *.js set suffixesadd=.js
 autocmd BufRead,BufRead *.html set suffixesadd=.html
 autocmd BufRead,BufRead *.md set ft=markdown
-
-augroup sparkup_types
-  " Remove ALL autocommands of the current group.
-  autocmd!
-  " Add sparkup to new filetypes
-  autocmd FileType mustache,php,htmldjango runtime! ftplugin/html/sparkup.vim
-augroup END
 
 "uses system clipboard as default register to yank to, paste from etc
 set clipboard=unnamed
