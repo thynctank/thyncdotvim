@@ -8,8 +8,15 @@ filetype on
 filetype plugin indent on
 syntax on
 
-let g:snippets_dir = "~/vimfiles/snippets"
+"let g:snippets_dir = "~/vimfiles/snippets"
 "let g:snippets_dir = "~/.vim/snippets"
+
+"let g:snipMate = get(g:, 'snipMate', {}) " Allow for vimrc re-sourcing
+"let g:snipMate.scope_aliases = {}
+"let g:snipMate.scope_aliases['typescript'] = 'javascript,typescript'
+
+
+let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 let g:ctrlp_custom_ignore = {
@@ -77,6 +84,7 @@ set autoread
 set visualbell
 
 "Keep current window at 130 chars when split
+set winheight=60
 set winwidth=80
 
 set hls is
@@ -99,7 +107,7 @@ set spell spelllang=en_us
 set cursorline cursorcolumn
 
 "set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
-set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\\3rdparty\\**\\*,*\\target\\**\\*,*\\angular-1*\\**\\*
+set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\\3rdparty\\**\\*,*\\target\\**\\*,*\\angular-1*\\**\\*,*\\portlets\\**\\*
 
 set nobackup
 set nowritebackup
@@ -121,7 +129,6 @@ map <D-[> :cp<CR>
 map <C-b> :TagbarToggle<CR>
 map <C-j> :TagbarOpenAutoClose<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
-map <Leader>t :CtrlPTag<CR>
 map <Leader>s :VimShellBufferDir<CR>
 map <Leader>w :call ToggleWrap()<CR>
 map <Leader>f :call ToggleFold()<CR>
