@@ -58,6 +58,14 @@ let g:solarized_contrast = "normal"
 let g:angular_source_directory='src/app'
 let g:angular_test_directory='src/app'
 
+" Set up the arrays to ignore for later
+if !exists('g:syntastic_html_tidy_ignore_errors')
+    let g:syntastic_html_tidy_ignore_errors = []
+endif
+" Ignore ionic tags in HTML syntax checking
+" See http://stackoverflow.com/questions/30366621
+" ignore errors about Ionic tags
+let g:syntastic_html_tidy_ignore_errors += [ " is not recognized!" ]
 "let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
 "let syntastic_mode_map = {'passive_filetypes': ['html']}
 let g:syntastic_quiet_messages = {'level': 'warnings'}
