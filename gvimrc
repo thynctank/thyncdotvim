@@ -30,6 +30,7 @@ call AddCycleGroup(['next', 'prev'])
 call AddCycleGroup(['on', 'off'])
 call AddCycleGroup(['enable', 'disable'])
 call AddCycleGroup(['light', 'dark'])
-
+call AddCycleGroup(['more', 'less'])
+call AddCycleGroup(['_self', '_blank'])
 
 

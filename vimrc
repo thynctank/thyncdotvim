@@ -20,7 +20,7 @@ let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag', 'mixed']
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules|complexity|coverage|3rdparty|target)$',
+  \ 'dir':  '\v[\/]\.?(git|hg|svn|branches|node_modules|dist|complexity|coverage|3rdparty|target|bundle)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
@@ -58,6 +58,12 @@ let g:solarized_contrast = "normal"
 let g:angular_source_directory='src/app'
 let g:angular_test_directory='src/app'
 
+" Set up the arrays to ignore for later
+if !exists('g:syntastic_html_tidy_ignore_errors')
+    let g:syntastic_html_tidy_ignore_errors = []
+endif
+" See http://stackoverflow.com/questions/30366621
+let g:syntastic_html_tidy_ignore_errors += [ " is not recognized!" ]
 "let g:syntastic_html_tidy_ignore_errors = [" proprietary attribute \"ng-"]
 "let syntastic_mode_map = {'passive_filetypes': ['html']}
 let g:syntastic_quiet_messages = {'level': 'warnings'}
@@ -107,7 +113,7 @@ set spell spelllang=en_us
 set cursorline cursorcolumn
 
 "set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
-set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\\3rdparty\\**\\*,*\\target\\**\\*,*\\angular-1*\\**\\*,*\\portlets\\**\\*
+set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\\3rdparty\\**\\*,*\\target\\**\\*,*\\angular-1*\\**\\*,*\\portlets\\**\\*,*\\bundle\\**\\*
 
 set nobackup
 set nowritebackup
@@ -156,9 +162,6 @@ cabbrev qq ReallyQuit
 command! Cdhere :cd %:p:h
 cabbrev cdh Cdhere
 
-command! ReloadAllSnippets :call ReloadAllSnippets()
-cabbrev rs ReloadAllSnippets 
-
 command! Tidy :!tidy -q -i "%" -m
 
 let g:session_autosave = 'yes'
@@ -166,6 +169,8 @@ let g:session_autoload = 'yes'
 let g:session_default_to_last = 1
 let g:ruby_conque_rspec_command='rspec'
 
+"disable vim sessions from including buffers not loaded into windows
+set sessionoptions-=buffers
 
 
 "let b:match_words .=',if:endif,block:endblock'
