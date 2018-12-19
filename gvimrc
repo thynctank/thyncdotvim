@@ -15,7 +15,7 @@ if has("gui_macvim")
   endfunction
 
 else
-  set guifont=DejaVu_Sans_Mono_for_Powerline:h11:b:cANSI:qDRAFT
+  set guifont=Lucida_Console:h10:b:cANSI:qDRAFT
   set guioptions-=m
   set guioptions-=T
   set guioptions-=r
@@ -32,5 +32,6 @@ call AddCycleGroup(['enable', 'disable'])
 call AddCycleGroup(['light', 'dark'])
 call AddCycleGroup(['more', 'less'])
 call AddCycleGroup(['_self', '_blank'])
+call AddCycleGroup(['resolve', 'reject'])
 
 
