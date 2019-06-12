@@ -27,12 +27,6 @@ let g:ctrlp_custom_ignore = {
 
 let g:vimwiki_list = [{'path': '~/notes', 'syntax': 'markdown', 'ext': '.markdown', 'index': 'HomePage'}]
 
-"airline options
-let g:airline_powerline_fonts = 0
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#ycm#enabled = 1
-let g:airline#extensions#ycm#error_symbol = 'E:'
-
 "syntastic options
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=1
@@ -112,8 +106,8 @@ set infercase
 set spell spelllang=en_us
 set cursorline cursorcolumn
 
-"set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
-set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\\3rdparty\\**\\*,*\\target\\**\\*,*\\angular-1*\\**\\*,*\\portlets\\**\\*,*\\bundle\\**\\*
+set wildignore+=*/node_modules/**/*,*/bower_components/**/*,*/dist/**/*,*/tags/**/*,*/branches/**/*,*/complexity/**/*,*/coverage/**/*,*/3rdparty/**/*
+"set wildignore+=*\\node_modules\\**\\*,*\\bower_components\\**\\*,*\\dist\\**\\*,*\\tags\\**\\*,*\\branches\\**\\*,*\\complexity\\**\\*,*\\coverage\\**\\*,*\\3rdparty\\**\\*,*\\target\\**\\*,*\\angular-1*\\**\\*,*\\portlets\\**\\*,*\\bundle\\**\\*
 
 set nobackup
 set nowritebackup
