@@ -121,13 +121,11 @@ let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
 map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:call ReloadAllSnippets()<CR>
 map <D-t> :tabnew<CR>
-map <C-l> :tabnext<CR>
-map <C-h> :tabprevious<CR>
+map <C-k> :tabnext<CR>
+map <C-j> :tabprevious<CR>
 map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
-map <C-b> :TagbarToggle<CR>
-map <C-j> :TagbarOpenAutoClose<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>s :VimShellBufferDir<CR>
 map <Leader>w :call ToggleWrap()<CR>
@@ -182,3 +180,4 @@ autocmd BufRead,BufRead *.md set ft=markdown
 
 "uses system clipboard as default register to yank to, paste from etc
 set clipboard=unnamed
+set autoread
