@@ -121,8 +121,8 @@ let mapleader = " "
 "reload vimrc, highlight syntax, clear pattern match highlighting
 map <D-r> :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR>:noh<CR>:call ReloadAllSnippets()<CR>
 map <D-t> :tabnew<CR>
-map <C-k> :tabnext<CR>
-map <C-j> :tabprevious<CR>
+map <C-j> :tabnext<CR>
+map <C-k> :tabprevious<CR>
 map <C-c> :cw 25<CR>
 map <D-]> :cn<CR>
 map <D-[> :cp<CR>
