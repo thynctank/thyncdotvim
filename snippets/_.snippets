@@ -19,15 +19,12 @@ snippet fieldnlabel
 	</div>
 	${3}
 snippet require
-	require([${1}], function(${2}) {
-		${3}
-	});
-	${4}
+	require(${1});
+	${2}
 snippet define
-	define([${1}], function(${2}) {
-		${3}
+	define(function(require, exports, module) {
+		${1}
 	});
-	${4}
 snippet haml
 	!!!
 	%html

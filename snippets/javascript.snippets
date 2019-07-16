@@ -4,15 +4,10 @@ snippet proto
 	function (${3:first_argument}) {
 		${4:// body...}
 	};
-# Function
-snippet fun
-	function ${1:function_name} (${2:argument}) {
-		${3:// body...}
-	}
 # Anonymous Function
 snippet f
-	function (${1}) {
-		${2}
+	function ${1}(${2}) {
+		${3}
 	}
 # if
 snippet if
@@ -167,6 +162,8 @@ snippet ang
 	angular${1}
 snippet clog
 	console.log(${1});
+snippet cerr
+	console.error(${1});
 snippet dlog
 	console.log('\n\n\n\n\n\n${1}**************\n\n\n\n\n\n');
 	console.log(${2});

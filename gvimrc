@@ -1,6 +1,6 @@
 if has("gui_macvim")
   let g:solarized_termcolors=256
-  set transparency=15
+  set transparency=20
 	set fuopt+=maxhorz
 	set guifont=Menlo_Regular:h16
 	set fu
@@ -33,5 +33,7 @@ call AddCycleGroup(['light', 'dark'])
 call AddCycleGroup(['more', 'less'])
 call AddCycleGroup(['_self', '_blank'])
 call AddCycleGroup(['resolve', 'reject'])
+call AddCycleGroup(['valid', 'invalid'])
+call AddCycleGroup(['Valid', 'Invalid'])
 
 
