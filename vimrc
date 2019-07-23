@@ -71,9 +71,9 @@ endif
 set laststatus=2
 set background=dark
 set completeopt-=preview
-"colorscheme solarized
+colorscheme solarized
 let g:airline_theme='solarized'
-colorscheme vilight
+"colorscheme vilight
 
 "persistent undo
 set undofile

@@ -187,11 +187,9 @@ snippet dqs
 snippet dqsa
 	document.querySelectorAll(${1});
 snippet then 
-  then(function success(res) {
-    ${1}
-  }, function err(res) {
-    ${2}
-  })
+	then(function(${1}) {
+		${2}
+	})
 snippet req
 	require('${1}')
 snippet esdis
