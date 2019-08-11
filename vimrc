@@ -15,6 +15,7 @@ syntax on
 "let g:snipMate.scope_aliases = {}
 "let g:snipMate.scope_aliases['typescript'] = 'javascript,typescript'
 
+"let g:vim_json_syntax_conceal = 0
 
 let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_working_path_mode = 'ra'
@@ -88,15 +89,15 @@ set winheight=60
 set winwidth=80
 
 set hls is
-set foldmethod=indent   
+set foldmethod=syntax   
 set foldnestmax=10  
 set foldlevel=0         
 set nofoldenable
 set nu
 set backspace=indent,eol,start
 set nowrap
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
@@ -177,6 +178,17 @@ autocmd BufRead,BufRead *.coffee set suffixesadd=.coffee
 autocmd BufRead,BufRead *.js set suffixesadd=.js
 autocmd BufRead,BufRead *.html set suffixesadd=.html
 autocmd BufRead,BufRead *.md set ft=markdown
+au! BufRead,BufNewFile *.json set filetype=json
+
+augroup json_autocmd
+  autocmd!
+  autocmd FileType json set autoindent
+  autocmd FileType json set formatoptions=tcq2l
+  autocmd FileType json set textwidth=78 shiftwidth=2
+  autocmd FileType json set softtabstop=2 tabstop=8
+  autocmd FileType json set expandtab
+  autocmd FileType json set foldmethod=syntax
+augroup END
 
 "uses system clipboard as default register to yank to, paste from etc
 set clipboard=unnamed

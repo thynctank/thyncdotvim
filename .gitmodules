@@ -173,3 +173,9 @@
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json
+[submodule "bundle/pretty_json.vim"]
+	path = bundle/pretty_json.vim
+	url = https://github.com/coldnight/pretty_json.vim

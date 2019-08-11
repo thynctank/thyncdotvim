@@ -1,8 +1,8 @@
 if has("gui_macvim")
   let g:solarized_termcolors=256
-  set transparency=20
+  set transparency=15
 	set fuopt+=maxhorz
-	set guifont=Menlo_Regular:h18
+	set guifont=Menlo_Regular:h14
 	set fu
   set toolbar=""
 
