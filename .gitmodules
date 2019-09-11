@@ -179,3 +179,6 @@
 [submodule "bundle/pretty_json.vim"]
 	path = bundle/pretty_json.vim
 	url = https://github.com/coldnight/pretty_json.vim
+[submodule "bundle/vim-kubernetes"]
+	path = bundle/vim-kubernetes
+	url = https://github.com/andrewstuart/vim-kubernetes.git

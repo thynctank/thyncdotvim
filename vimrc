@@ -193,3 +193,4 @@ augroup END
 "uses system clipboard as default register to yank to, paste from etc
 set clipboard=unnamed
 set autoread
+set mouse+=a
