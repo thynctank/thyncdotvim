@@ -152,6 +152,9 @@ cabbrev ww ReallyWrite
 command! ReallyQuit :q!
 cabbrev qq ReallyQuit
 
+command! PrettyJson :%!python -m json.tool
+cabbrev pj PrettyJson
+
 command! Cdhere :cd %:p:h
 cabbrev cdh Cdhere
 
